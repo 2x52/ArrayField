@@ -1,18 +1,18 @@
 --[[
 
-ArrayField Interface Suite
-by Meta
+Array Interface Suite
+by Sentinel
 
 Original by Sirius
 
 -------------------------------
-Arrays  | Designing + Programming + New Features
+Sentinel  | Designing + Programming + New Features
 
 ]]
 
 local Release = "Release 1A"
 local NotificationDuration = 6.5
-local RayfieldFolder = "Rayfield"
+local RayfieldFolder = "Array"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
 local RayFieldQuality = {}
@@ -120,7 +120,7 @@ local ContentProvider = game:GetService("ContentProvider")
 local Rayfield = game:GetObjects("rbxassetid://13067385695")[1]
 
 -- pcall(function()
--- _G.LastRayField.Name = 'Old Arrayfield'
+-- _G.LastRayField.Name = 'Old Array'
 -- _G.LastRayField.Enabled = false
 -- end)
 
@@ -1104,10 +1104,10 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.TextTransparency = 1
 	Main.Shadow.Image.ImageTransparency = 1
 	LoadingFrame.Version.TextTransparency = 1
-	LoadingFrame.Title.Text = Settings.LoadingTitle or "Arrayfield Interface Suite"
-	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sirius | Meta | Rafa"
-	if Settings.LoadingTitle ~= "Arrayfield Interface Suite" then
-		LoadingFrame.Version.Text = "Arrayfield UI"
+	LoadingFrame.Title.Text = Settings.LoadingTitle or "Array Interface Suite"
+	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sentinel | Meta | Rafa"
+	if Settings.LoadingTitle ~= "Array Interface Suite" then
+		LoadingFrame.Version.Text = "Array UI"
 	end
 
 	Topbar.Visible = false
@@ -3411,7 +3411,7 @@ function RayfieldLibrary:SaveConfiguration()
 	SaveConfiguration()
 end
 
-if not getgenv().DisableArrayfieldAutoLoad then
+if not getgenv().DisableArrayAutoLoad then
 	task.delay(9, RayfieldLibrary.LoadConfiguration, RayfieldLibrary)
 end
 
